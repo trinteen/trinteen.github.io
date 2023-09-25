@@ -1,3 +1,19 @@
 baseURL = 'https://trinteen.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = "cz-cs"
+title = "MY LIFE IS ZEROS AND ONES"
+theme = "hugo-theme-stack"
+sectionPagesMenu = "main"
+pluralizelisttitles = "false"
+
+[params]
+    homeSubtitle = "Oficiální stránky jednoho \"Ajťáka\" co počítačem a technikou žije."
+    customJS = ["/mod.js"]
+    [params.logo]
+        logoText = "Trinteen.CZ"
+        logoCursorColor = "red"
+
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
