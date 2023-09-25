@@ -4,6 +4,7 @@ title = "MY LIFE IS ZEROS AND ONES"
 theme = "hugo-theme-stack"
 sectionPagesMenu = "main"
 pluralizelisttitles = "false"
+timeout = 180000
 
 [params]
     homeSubtitle = "Oficiální stránky jednoho \"Ajťáka\" co počítačem a technikou žije."
