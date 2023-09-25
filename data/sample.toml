@@ -1,0 +1,7 @@
+[table]
+  [[row]]
+  data = ["Animal", "SoundData"]
+  [[row]]
+  data = ["![alt](image.jpg)", "Meow"]
+  [[row]]
+  data = ["Dog", "Woof"]
