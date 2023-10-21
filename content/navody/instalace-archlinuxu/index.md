@@ -34,7 +34,7 @@ Pro další nastavení v případě nejasností nebo doplnění navštivte [Wiki
 Na webových stránkách [**archlinux.org**](https://archlinux.org/download/) v sekci **Download** sjedeme níže, v seznamu zrcadel (mirrors) najdeme požadovanou zemi **Czechia** a klikneme na libovolný odkaz.
 ![full](mirrors.png)
 
-V seznamu souborů stáhneme libovolní soubor s koncovkou ISO (obraz disku). A vyčkáme na jeho stažení.
+V seznamu souborů stáhneme libovolný soubor s koncovkou ISO (obraz disku). A vyčkáme na jeho stažení.
 ![full](mirrors2.png)
 
 Jakmile se nám soubor stáhne. Tak si soubor:
