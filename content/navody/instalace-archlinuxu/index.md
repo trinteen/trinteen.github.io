@@ -26,7 +26,7 @@ Doporučím doplnit repozitář [**Chaotic-AUR**](https://aur.chaotic.cx/), kter
 
 # A hurá do instalace Arch Linuxu
 
-V tomto návodě bude instalace probíhat s předpokladem že máme zařízení podporující/pracující s modém biosu v UEFI a s připojeným internetem.
+V tomto návodě bude instalace probíhat s předpokladem že máme zařízení podporující/pracující s módem biosu v UEFI a s připojeným internetem.
 
 Pro další nastavení v případě nejasností nebo doplnění navštivte [Wiki pro Arch Linux](https://wiki.archlinux.org/).
 
