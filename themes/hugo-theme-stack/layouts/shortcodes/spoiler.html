@@ -1,0 +1,40 @@
+{{ $unique_id := substr (md5 .Inner) 0 16 }}
+
+<div id="spoiler_{{$unique_id}}">
+    <div class="title" onclick="spoiler_show('{{$unique_id}}');">{{ .Get `text` }}</div>
+    <div class="content">{{ .Inner }}</div>
+</div>
+
+<style>
+    #spoiler_{{$unique_id}} {
+        width: 100%;
+        border: 1px solid black;
+        margin-bottom: 10px;
+    }
+
+    #spoiler_{{$unique_id}} .title {
+        background: black;
+        color: white;
+        padding: 5px;
+    }
+
+    #spoiler_{{$unique_id}} .content {
+        display: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: rgb(75, 75, 75);
+        padding: 5px;
+    }
+</style>
+
+<script>
+    function spoiler_show(id){
+        var box = document.querySelector('#spoiler_' + id + ' .content');
+        if(box.style.display == "block"){
+            box.style.display = "none";
+        } else {
+            box.style.display = "block";
+        }
+    }
+</script>

@@ -266,11 +266,98 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
 
 
-### První spustění nově nainstalovaného systému
+# První spustění nově nainstalovaného systému
 
 ![full](13.png)
 
 
+### Vytvoření obyčejného uživatele
+
+1) Vytvoříme standartního uživatele
+
+    > **useradd -m uzivatel**
+
+2) Nastavíme heslo pro standartního uživatele
+
+    > **passwd uzivatel**
+
+3) Přiradit skupiny k novému uživateli
+
+    > **usermod -aG wheel,audio,video,optical,storage,games uzivatel**
+
+4) Přidat uživateli administrátorská práva
+
+    Nainstalujeme **sudo**    
+    
+    > **pacman -S sudo**
+
+    Přidat uživatele k sudo
+
+    > **nano /etc/sudoers**
+
+    V souboru najdeme sekci **UUser privilege specification** a přidáme tento zápis
+
+    > **uzivatel ALL=(ALL:ALL) ALL**
+
+
+### Zobrazovací server a grafické prostředí
+
+1) X.Org, Xorg, X
+
+    > **pacman -S xorg**
+
+2) Instalace ovladačů ke grafické kartě
+    Více informací najdete [ZDE](https://wiki.archlinux.org/title/Xorg)
+
+    AMD:
+    > **pacman -S xf86-video-amdgpu mesa**
+
+    Intel:
+    > **pacman -S xf86-video-intel mesa**
+
+    NVIDIA:
+    > **pacman -S nvidia nvidia-utils**
+
+
+3) Grafické rozhrání
+
+    {{< spoiler text="GNOME" >}}
+        pacman: gnome gnome-terminal gdm
+        <br>
+        služby: gdm.service
+    {{< /spoiler >}}
+
+    {{< spoiler text="KDE" >}}
+        pacman: plasma sddm kde-applications
+        <br>
+        služby: sddm.service
+    {{< /spoiler >}}
+
+    {{< spoiler text="XFCE" >}}
+        pacman: xfce4 thunar lightdm lightdm-gtk-gretter
+        <br>
+        služby: lightdm.service
+    {{< /spoiler >}}
+
+
+    pacman:
+    > **pacman -S <pacman balíčky>**
+
+    služby:
+    > **systemctl enable <služba>**
+    
 # Návod se průběžně doplňuje
 
 Průběžně budu doplňovat a přidávat další kroky.
+
+<!--
+
+{{< spoiler text="Hovno" >}}
+    necuzm
+{{< /spoiler >}}
+
+{{< spoiler text="Click to reveal text" >}} You found me!2222 {{< /spoiler >}}
+
+{{< spoiler text="Click to reveal text" >}} You found me!3333 {{< /spoiler >}}
+
+--!>
