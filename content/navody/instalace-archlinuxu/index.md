@@ -9,7 +9,7 @@ draft: true
 # Úvod
 
 ### Důvod vzniku tohoto návodu?
-Za léta strávená za PC, jsme narazil na různé linuxové systémy, jako např. **Damn Small Linux, Slax, Ubuntu, Fedora, Suse, .... a Arch Linux**. Pro začátečníka se Arch Linux se zdá těžký a k nepochopení, ale mohu říci, že jsem o Linuxu řekl mnoho lidem – začátečníkům. Ano ze začátku bylo hodně pádů, chyb. Správného IT nadšence nezastaví ani tohle. Zkoušeli to opakovaně, až dosáhli cíle, a ještě se naučili pracovat se systém od začátku s **terminálem**.
+Za léta strávená za PC, jsme narazil na různé linuxové systémy, jako např. **Damn Small Linux, Slax, Ubuntu, Fedora, Suse, .... a Arch Linux**. Pro začátečníka se Arch Linux se zdá těžký a k nepochopení, ale mohu říct, že jsem o Linuxu řekl mnoho lidem – začátečníkům. Ano ze začátku bylo hodně pádů, chyb. Správného IT nadšence nezastaví ani tohle. Zkoušeli to opakovaně, až dosáhli cíle, a ještě se naučili pracovat se systém od začátku s **terminálem**.
 
 Ovládat terminál je základ práce s Linuxem. Pokud se něco pokazí, tak skončíš právě v něm. V terminálu se snažíš příčinu najít a opravit.
 
