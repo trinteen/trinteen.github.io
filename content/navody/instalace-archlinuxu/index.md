@@ -202,7 +202,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 1) Nastavení časové zóny a systémového času
 
         ln -sf /usr/share/zoneinfo/Europe/Prague /etc/localtime
-        hwclock \-\-systohc
+        hwclock --systohc
 
 2) Nastavení lokalizace
 
@@ -413,6 +413,8 @@ Přihlašovací obrazovka GNOME (GDM - Gnome Display Manager)
 
 Úvodní plocha prostřední GNOME
 ![full](15.png)
+
+# Další užitečné programy a služby
 
 
 # Návod se průběžně doplňuje
