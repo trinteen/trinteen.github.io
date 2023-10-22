@@ -266,12 +266,12 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
 
 
-# První spustění nově nainstalovaného systému
+# První spuštění nově nainstalovaného systému
 
 ![full](13.png)
 
 
-### Vytvoření obyčejného uživatele
+### Vytvoření standartního uživatele
 
 1) Vytvoříme standartního uživatele
 
