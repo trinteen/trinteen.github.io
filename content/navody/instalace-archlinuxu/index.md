@@ -313,7 +313,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
         nano /etc/sudoers
 
-    V souboru najdeme sekci **UUser privilege specification** a přidáme tento zápis
+    V souboru najdeme sekci **User privilege specification** a přidáme tento zápis
 
         uzivatel ALL=(ALL:ALL) ALL
 
