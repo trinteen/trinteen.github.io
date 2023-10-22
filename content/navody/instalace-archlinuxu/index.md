@@ -17,6 +17,17 @@ S Arch Linuxem jsem se seznámil přes bratrance, který v něm pracoval. Mě te
 
 Ale když máte kolem sebe komunitu Linuxáků, kteří sdílí stejné nadšení a máte možnost se něco nového naučit, předat své poznatky je super. 
 
+
+----------
+
+Par discord komunit:
+- [Arch Linux cz&sk](https://discord.gg/6Km2YaC4)
+- [Linux CZ/SK](https://discord.gg/EMPH9PnA)
+- [GeekBoy - Technologie, počítače a hry](https://discord.gg/kPRj3QMq)
+
+---------
+
+
 A díky nim přijdete na to že, s Linuxem je ještě větší radost pracovat a hrát si s ním. Tímto návodem bych ukázal že nainstalovat Arch Linux není zas tak složíté, jak se může na první pohled zdát. Jen to chce chuť, čas a nebát se selhání z chyb, běhenm instalace.
 
 ### Co je to Arch Linux
@@ -71,7 +82,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     a) Použijeme funkci **ping** na server google.com, kterou si ověříme zda komunikujeme s daným serverem, resp. jsme připojeni k internetu. Kombinací kláves **CTRL+C** proces ping ukončíme.
     ![full](4.png)
 
-    > **ping google.com**
+        ping google.com
 
     b) Připojení k Wi-Fi nastavíme pomoci **iwctl** (více info [ZDE](https://wiki.archlinux.org/title/iwd)). Pro ověření provedeme znovu ping.
     
@@ -79,13 +90,13 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     Pomocí příkazu **loadkeys** nastavíme české rozložení klávesnice.
 
-    > **loadkeys cz**
+        loadkeys cz
 
 6) Synchronizujeme si čas
     
     Pomocí příkazu **timedatectl** spustíme na pozadí sesynchronizování času, ať zamezíme případnému budoucímu selhání stahování z důvodu nesouhlasu s časů.
 
-    > **timedatectl set-ntp true**
+        timedatectl set-ntp true
 
 
 7) Připravíme disk a jeho oddíly
@@ -133,34 +144,32 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     Oddíl **sda1** (512MB) bude určený pro uložení GRUBu a zavádění systémů z UEFI:
     
-    > **mkfs.fat -F 23 /dev/sda1**
+        mkfs.fat -F 23 /dev/sda1
 
     Oddíl **sda2** (16GB) bude určený pro SWAP:
     
-    > **mkswap /dev/sda2**
-    
-    > **swapon /dev/sda2**
+        mkswap /dev/sda2
+        swapon /dev/sda2
 
     Oddíl **sda3** (104GB) bude root (prostor pro systém). Pokud bude vyžadováno potvrzení, tak potvrdíme **y**.
 
-    > **mkfs.ext4 /dev/sda3**
+        mkfs.ext4 /dev/sda3
 
 
     d) Připojíme oddíly do dočasné složky
     
     Nově vytvořené a naformátované oddíly připojíme do dočasné složky a provedeme jejich propojení.
 
-    > **mount /dev/sda3 /mnt/**
+        mount /dev/sda3 /mnt/
 
     Vstoupíme do připojené složky **/mnt**.
 
-    > **cd /mnt**
+        cd /mnt
 
     Vytvoříme složku **boot**, do které připojíme boot oddíl **sda1**.
 
-    > **mkdir boot**
-
-    > **mount /dev/sda1 boot/**
+        mkdir boot
+        mount /dev/sda1 boot/
 
     Správnost připojení si ověříme pomocí příkazu **lsblk**.   
     ![full](9.png)
@@ -169,85 +178,95 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
 1) Aktualizace zrcadel v mirrorlistu
 
-    > **reflector -c Czechia > /etc/pacman.d/mirrorlist**
+        reflector -c Czechia > /etc/pacman.d/mirrorlist
 
 2) Instalace základních součástí systému pro správný běh
     ![full](10.png)
     ![full](11.png)
 
-    > **pacstrap -K /mnt base base-devel linux linux-firmware linux-headers nano git grub efibootmgr networkmanager**
+        pacstrap -K /mnt base base-devel linux linux-firmware linux-headers nano git grub efibootmgr networkmanager
 
 3) Zapíšeme strukturu oddilů do souboru Fstab
 
-    > **genfstab -U /mnt >> /mnt/etc/fstab**
+        genfstab -U /mnt >> /mnt/etc/fstab
 
 4) Napojení na nově nainstalovaný systém
     
     Tímto příkazem se přepnete do terminálu nově nainstalovaného systému.
 
-    > **arch-chroot /mnt**
+        arch-chroot /mnt
 
 
 ### Finální nastavení nového systému
 
 1) Nastavení časové zóny a systémového času
 
-    > **ln -sf /usr/share/zoneinfo/Europe/Prague /etc/localtime**
-
-    > **hwclock \-\-systohc**
+        ln -sf /usr/share/zoneinfo/Europe/Prague /etc/localtime
+        hwclock \-\-systohc
 
 2) Nastavení lokalizace
 
     Upravíme soubor **/etc/locale.gen**
 
-    > **nano /etc/locale.gen**
+        nano /etc/locale.gen
 
     kde odkomentujeme/odstraníme #
 
     z:
 
-    > **#cs_CZ.UTF-8 UTF-8**
+        #cs_CZ.UTF-8 UTF-8
     
     na:
 
-    > **cs_CZ.UTF-8 UTF-8**
+        cs_CZ.UTF-8 UTF-8
 
     změny uložíme **CTRL+S**, program ukončíme **CTRL+X** a spustíme generování:
 
-    > **locale-gen**
+        locale-gen
     
 3) Nastavení sítě
 
     Nastavíme jméno počítače
 
-    > **echo "navod" > /etc/hostname**
+        echo "navod" > /etc/hostname
+
+    Nastavíme hodnoty do **hosts**
+
+        nano /etc/hosts
+
+    Do souboru **/etc/hosts** vložíme následující text:
+
+        127.0.0.1   localhost
+        ::1         localhost
+        127.0.1.1   navod.localdomain   navod
+
+
 
 4) Vytvoření Initramfs
 
-    > **mkinitcpio -P**
+        mkinitcpio -P
 
 5) Nastavení hesla pro správce (root) uživatele
 
     POZOR při zadávání není heslo vidět!
     
-    > **passwd**
+        passwd
 
     ![full](12.png)
 
 6) Instalace GRUB
 
-    > **grub-install --target=x86_64-efi --efi-directory=/boot/**
-
-    > **grub-mkconfig -o /boot/grub/grub.cfg**
+        grub-install --target=x86_64-efi --efi-directory=/boot/
+        grub-mkconfig -o /boot/grub/grub.cfg
 
 7) Povolení služby NetworkManager
 
-    > **systemctl enable NetworkManager**
+        systemctl enable NetworkManager
 
 
 8) Ukončení relace v **arch-chroot**
 
-    > exit
+        exit
 
 
 ### Po instalaci a nastavení
@@ -256,13 +275,12 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     V případě problému s odpojením restartujte.
 
-    > **umount /mnt/boot**
-
-    > **umount /mnt/**
+        umount /mnt/boot
+        umount /mnt/
 
 2) Restartování
 
-    > **reboot**
+        reboot
 
 
 
@@ -275,51 +293,68 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
 1) Vytvoříme standartního uživatele
 
-    > **useradd -m uzivatel**
+        useradd -m uzivatel
 
 2) Nastavíme heslo pro standartního uživatele
 
-    > **passwd uzivatel**
+        passwd uzivatel
 
 3) Přiradit skupiny k novému uživateli
 
-    > **usermod -aG wheel,audio,video,optical,storage,games uzivatel**
+        usermod -aG wheel,audio,video,optical,storage,games uzivatel
 
 4) Přidat uživateli administrátorská práva
 
     Nainstalujeme **sudo**    
     
-    > **pacman -S sudo**
+        pacman -S sudo
 
     Přidat uživatele k sudo
 
-    > **nano /etc/sudoers**
+        nano /etc/sudoers
 
     V souboru najdeme sekci **UUser privilege specification** a přidáme tento zápis
 
-    > **uzivatel ALL=(ALL:ALL) ALL**
+        uzivatel ALL=(ALL:ALL) ALL
 
 
 ### Zobrazovací server a grafické prostředí
 
 1) X.Org, Xorg, X
 
-    > **pacman -S xorg**
+        pacman -S xorg
 
-2) Instalace ovladačů ke grafické kartě
-    Více informací najdete [ZDE](https://wiki.archlinux.org/title/Xorg)
+2) Konfigurace klávesnice pro Xorg
+
+    Otevřeme soubor **/etc/X11/xorg.conf.d/00-keyboard.conf**
+
+        nano /etc/X11/xorg.conf.d/00-keyboard.conf
+
+    a vložíme následující text:
+
+        Section "InputClass"
+            Identifier "system-keyboard"
+	        MatchIsKeyboard "on"
+	        Option "XkbLayout" "cz"  
+        EndSection
+
+
+3) Instalace ovladačů ke grafické kartě, více informací najdete [ZDE](https://wiki.archlinux.org/title/Xorg)
 
     AMD:
-    > **pacman -S xf86-video-amdgpu mesa**
+
+        pacman -S xf86-video-amdgpu mesa
 
     Intel:
-    > **pacman -S xf86-video-intel mesa**
+
+        pacman -S xf86-video-intel mesa
 
     NVIDIA:
-    > **pacman -S nvidia nvidia-utils**
+
+        pacman -S nvidia nvidia-utils
 
 
-3) Grafické rozhrání
+4) Grafické rozhrání
 
     {{< spoiler text="GNOME" >}}
         pacman: gnome gnome-terminal gdm
@@ -341,10 +376,12 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
 
     pacman:
-    > **pacman -S <pacman balíčky>**
+
+        pacman -S <pacman balíčky>
 
     služby:
-    > **systemctl enable <služba>**
+
+        systemctl enable <služba>
     
 # Návod se průběžně doplňuje
 
