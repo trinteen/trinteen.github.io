@@ -223,6 +223,31 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     změny uložíme **CTRL+S**, program ukončíme **CTRL+X** a spustíme generování:
 
         locale-gen
+
+    ----
+
+
+    Upravíme soubor **/etc/locale.conf**
+
+        nano /etc/locale.conf
+
+    a vložíme:
+
+        LANG=cs_CZ.UTF-8
+
+    změny uložíme **CTRL+S**, program ukončíme **CTRL+X**
+
+    ----
+
+    Upravíme soubor **/etc/vconsole.conf**
+
+        nano /etc/vconsole.conf
+
+    a vložíme:
+
+        KEYMAP=cz
+
+    změny uložíme **CTRL+S**, program ukončíme **CTRL+X**
     
 3) Nastavení sítě
 
@@ -382,7 +407,14 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     služby:
 
         systemctl enable <služba>
-    
+
+Přihlašovací obrazovka GNOME (GDM - Gnome Display Manager)
+![full](14.png)
+
+Úvodní plocha prostřední GNOME
+![full](15.png)
+
+
 # Návod se průběžně doplňuje
 
 Průběžně budu doplňovat a přidávat další kroky.
