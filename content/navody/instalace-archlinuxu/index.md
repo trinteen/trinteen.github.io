@@ -184,7 +184,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     ![full](10.png)
     ![full](11.png)
 
-        pacstrap -K /mnt base base-devel linux linux-firmware linux-headers nano git grub efibootmgr networkmanager
+        pacstrap -K /mnt base base-devel linux linux-firmware linux-headers nano git grub efibootmgr networkmanager avahi
 
 3) Zapíšeme strukturu oddilů do souboru Fstab
 
@@ -265,6 +265,8 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
         ::1         localhost
         127.0.1.1   navod.localdomain   navod
 
+    změny uložíme **CTRL+S**, program ukončíme **CTRL+X**
+
 
 
 4) Vytvoření Initramfs
@@ -284,9 +286,10 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
         grub-install --target=x86_64-efi --efi-directory=/boot/
         grub-mkconfig -o /boot/grub/grub.cfg
 
-7) Povolení služby NetworkManager
+7) Povolení nainstalované služby
 
-        systemctl enable NetworkManager
+        systemctl enable NetworkManager.service
+        systenctl enable avahi-daemon.service
 
 
 8) Ukončení relace v **arch-chroot**
@@ -342,6 +345,8 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
         uzivatel ALL=(ALL:ALL) ALL
 
+    Změny uložíme **CTRL+S**, program ukončíme **CTRL+X**    
+
 
 ### Zobrazovací server a grafické prostředí
 
@@ -362,6 +367,8 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 	        MatchIsKeyboard "on"
 	        Option "XkbLayout" "cz"  
         EndSection
+    
+    změny uložíme **CTRL+S**, program ukončíme **CTRL+X**
 
 
 3) Instalace ovladačů ke grafické kartě, více informací najdete [ZDE](https://wiki.archlinux.org/title/Xorg)
@@ -415,6 +422,111 @@ Přihlašovací obrazovka GNOME (GDM - Gnome Display Manager)
 ![full](15.png)
 
 # Další užitečné programy a služby
+
+Budeme pracovat v terminálu (konzole, terminál, ...)
+
+### PARU - AUR Helper
+
+1) Stáhneme klon repozitáře přes Git
+
+        git clone https://aur.archlinux.org/paru.git
+
+2) Přejdeme do nově vytvořené složky **paru**
+
+        cd paru/
+
+3) Zkompilujeme program ze stažených zdrojových dat
+
+        makepkg -si
+
+    ![full](16.png)
+    ![full](17.png)
+    ![full](18.png)
+
+4) Sesynchronizujeme databázi AUR přes **paru**
+
+        paru -Syu
+
+    ![full](19.png)
+
+5) Základní příkazy pro používání **paru**
+
+    |  Argument  | Popis |
+    |------------|-------|
+    | -S <balik> | Nainstalovat specifický balík |
+    | -Ss <dotaz> | Vyhledávání v repozitáři |
+    | -R <balik> | Odstranit specifický balík |
+    | -Syu | Aktualizovat repozitář a aktualizace |
+    | \-\-noconfirm | Nebude vyžadováno potvrzení pro zpracování procesu. |
+    | \-\-needed | Nainstaluje jen nenainstalované balíčky |
+
+    Příklad:
+
+        paru --needed --noconfirm -Syu <balík/y>
+
+    Proveď sychnronizaci repozitáře, nainstaluj jen potřebné balíčky a nevyžaduj potvrzení.
+
+    Tento zápis můžeme v budoucnu použít při psaní vlastního automatizovaného scriptu.
+
+    Také jsem si napsal malý script pro automatickou instalaci používaných programů a služeb. K nahlednutí je na mém GitHubu [ZDE](https://github.com/trinteen/archlinux/tree/main/post-install)
+
+### PACMAN - Povolení multilib repozitáře
+
+Repozitář multilib obsahuje 32bitový software a knihovny, které lze použít ke spuštění a sestavení 32bitových aplikací na 64bitových instalacích ( např. wine, steam apod. ).
+
+1) Otevřeme konfigurační soubor **/etc/pacman.conf**
+
+    ![full](21.png)
+
+        sudo nano /etc/pacman.conf
+
+2) Najdeme v souboru požadovaný řádek
+
+        #[multilib]
+        #Include = /etc/pacman.d/mirrorlist
+
+3) Odkomentujeme
+
+        [multilib]
+        Include = /etc/pacman.d/mirrorlist
+
+4) Změny uložíme **CTRL+S**, program ukončíme **CTRL+X**
+
+5) Spustíme synchronizaci repozitáře
+
+        paru
+
+### SAMBA - Sítová komunikace, sdílené složky, NAS apod.
+
+1) Nainstalujeme pořebné balíčky
+
+        paru --needed -S samba smbclient gvfs gvfs-smb
+
+2) Vytvoříme konfigurační soubor **/etc/samba/smb.conf**
+
+    Ve webovém prohlížeči si otevřeme [TENTO ODKAZ](https://git.samba.org/samba.git/?p=samba.git;a=blob_plain;f=examples/smb.conf.default;hb=HEAD) a jeho obsah si zkopírujeme do paměti (CTRL+C).
+
+    Otevřeme si v konzoli a editor **nano**
+
+        sudo nano /etc/samba/smb.conf
+
+    a vložíme obsah z paměti (CTRL+SHIFT+V)
+    ![full](20.png)
+
+    změny uložíme **CTRL+S**, program ukončíme **CTRL+X**
+
+    
+
+
+
+
+3) Povolíme a zapneme službu
+
+        systemctl enable smb.service
+        systemctl start smb.service
+
+
+
 
 
 # Návod se průběžně doplňuje
