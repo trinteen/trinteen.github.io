@@ -6,6 +6,13 @@ draft: true
 
 ![full](1.png)
 
+*Budeme potřebovat:*
+- Internet - pro stažení programu a dat při tvorbě flasky
+- Zařízení s Windows
+- Uložiště o minimální velikosti 8GB (Externí disk, USB flash disk, SD karta)
+- Licenci - Najdeme klíč k Windows (štítek, email, a nebo vytahnéme z aktuální instalace pomocí vbs scriptu [ZDE](cdkey.vbs))
+- Trpělivost :)
+
 
 *A) Vytvoření instalačního média*
 1. Stažení programu k vytvoření instalačního media ze stránek MS = Media creation tool.
