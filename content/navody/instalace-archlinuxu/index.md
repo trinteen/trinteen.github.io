@@ -289,7 +289,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 7) Povolení nainstalované služby
 
         systemctl enable NetworkManager.service
-        systenctl enable avahi-daemon.service
+        systemctl enable avahi-daemon.service
 
 
 8) Ukončení relace v **arch-chroot**
