@@ -144,7 +144,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     Oddíl **sda1** (512MB) bude určený pro uložení GRUBu a zavádění systémů z UEFI:
     
-        mkfs.fat -F 23 /dev/sda1
+        mkfs.fat -F 32 /dev/sda1
 
     Oddíl **sda2** (16GB) bude určený pro SWAP:
     
