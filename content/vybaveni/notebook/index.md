@@ -5,16 +5,16 @@ draft: true
 ---
 
 *Lenovo X270*
-![](1.jpg)
+![full](1.jpg)
 Starý notebook X240 byl nahrazen za tento v konfiguraci: i5-6300U, 16GB, 2x 256GB disk, HDMI, USB-C
 
 ---
 
 *SanDisk X600 (256GB)*
-![](2.jpg)
+![full](2.jpg)
 
 ---
 
 *Transcend MTS 430S M.2 SSD (256GB)*
-![](3.jpg)
+![full](3.jpg)
 Záloha je důležitá, pro případ selhání systému, nebo systémového disku
