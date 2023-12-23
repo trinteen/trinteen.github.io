@@ -69,7 +69,7 @@ Klávesnici jsem zakoupil ze zvědavosti a vyzkoušení této velikosti. Začát
 
 ---
 
-*LG 25UM58-P 2560x1080 (Monitor)*
+*2x LG 29UM69G 2560x1080 (Monitor)*
 ![full](11.jpg)
 
 ---
@@ -86,9 +86,9 @@ Malý monitor, napájený přes USB. Využíván jako nouzový monitor při nedo
 
 ---
 
-*Logitech Marathon Mouse M705*
+*Logitech Marathon Mouse M705 - RIP*
 ![full](14.jpg)
-Obyčejná, ale přesto úžasná myš.
+Obyčejná, ale přesto úžasná myš, ale odešla :D
 
 ---
 
