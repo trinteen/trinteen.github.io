@@ -86,6 +86,7 @@ V případě reinstalace systému je nutné pro optimální fungování odstrani
 8. Instalujeme systém Windows
 ![full](25.png)
 ![full](26.png)
+Po restartování (kliknutí na "Restartovat teď"), můžeme flashku s instalací odpojit. Finální nastavení bude pokračovat už z disku (z nového systému).
 
 9. Opravíme pořadí disků
 Pokud jsme v BIOSu nastavovali boot order nastavíme zpět systémový disk jako první.
