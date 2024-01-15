@@ -86,9 +86,9 @@ Malý monitor, napájený přes USB. Využíván jako nouzový monitor při nedo
 
 ---
 
-*Logitech Marathon Mouse M705 - RIP*
+*Logitech PRO X Superlight*
 ![full](14.jpg)
-Obyčejná, ale přesto úžasná myš, ale odešla :D
+Lehká, pohodlná, pohyb po podložce příjemný
 
 ---
 
