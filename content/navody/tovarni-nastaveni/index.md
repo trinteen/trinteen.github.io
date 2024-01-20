@@ -107,4 +107,4 @@ Výsledkem tohoto testu, je potvrzení známé reality a to, že program **Obnov
 
 # Závěrem
 
-Ušetřete si svůj čas a proběžně si zálohujte svá důležitá data, aby jste se nemuseli bát [**ćisté instalace Windows pomocí flash disku**](/navody/instalace-windows-11/).
+Ušetřete si svůj čas a průběžně si zálohujte svá důležitá data, aby jste se nemuseli bát [**ćisté instalace Windows pomocí flash disku**](/navody/instalace-windows-11/).
