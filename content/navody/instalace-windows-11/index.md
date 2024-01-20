@@ -6,6 +6,9 @@ draft: true
 
 ![full](1.png)
 
+        Tento návod lze využít i pro instalaci Windows 10. První fáze instalace je stejná.
+        Odkaz: https://www.microsoft.com/cs-cz/software-download/windows10 
+
 *Budeme potřebovat:*
 - Internet - pro stažení programu a dat při tvorbě flasky
 - Zařízení s Windows
