@@ -532,15 +532,3 @@ Repozitář multilib obsahuje 32bitový software a knihovny, které lze použít
 # Návod se průběžně doplňuje
 
 Průběžně budu doplňovat a přidávat další kroky.
-
-<!--
-
-{{< spoiler text="Hovno" >}}
-    necuzm
-{{< /spoiler >}}
-
-{{< spoiler text="Click to reveal text" >}} You found me!2222 {{< /spoiler >}}
-
-{{< spoiler text="Click to reveal text" >}} You found me!3333 {{< /spoiler >}}
-
---!>
