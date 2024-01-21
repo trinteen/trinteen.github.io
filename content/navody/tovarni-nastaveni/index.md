@@ -20,7 +20,7 @@ Rád bych tímto článkem sdělil, proč je tato funkce zbytečná, zničujíc�
 - ztráta dat - BFU (Běžný Franta Uživatel) nezná způsob, jak data získat zpět jinak (doporučení: live usb s Linux Mint)
 - opakované opravy opravou, jen zvyšuje riziko problému (Diktát z češtiny také nemůžete opravovat do nekonečna) 
 
-Ano, jsou případy, kdy je tovární nastavení úspěšné. Dříve nebo později se, ale setkáte se dalším problémem.
+Ano, jsou případy, kdy je tovární nastavení úspěšné. Dříve nebo později se ale setkáte se dalším problémem.
 
 
 # Otestujeme chování ve virtuálním počítači
@@ -49,7 +49,7 @@ Jako příklad jsem vytvořil virtuální počítač ve **VirtualBoxu** s náled
 Jedná se o stav ihned po dokončení čisté instalace bez aktualizací, programů a jiných nastavení.
 
 - Trvání procesu: **20 minut**
-- Využití disku: **39,2 GB**
+- Využití disku: **39,2 GB volných**
 - Vyčištění disku: **13.7 MB** (zbytečné soubory po instalaci k odstranění)
 
 
@@ -83,7 +83,7 @@ Spuštění procesu obnovy.
 Jedná se o stav ihned po dokončení obnovy, dle nastavení.
 
 - Trvání procesu: **60 minut**
-- Využití disku: **38,6 GB**
+- Využití disku: **38,6 GB volných**
 - Vyčištění disku: **744 MB** (zbytečné soubory po instalaci k odstranění)
 
 
