@@ -82,6 +82,10 @@ Nainstalujeme úplně čistý systém. Vyhneme se tak případným problémům s
 
 7. Na jaký disk nainstalovat?
 Doporučení: Pokud máme v PC/Notebooku více disků. Je lepší nechat zapojený jen systémový a ostatní odpojit. Zabrání se tak ovlivnění dat na ostatních discích.
+Nebyl nalezen žádný disk? 
+- Deaktivujte RAID řadič = (Intel Rapid Storage Technology - IRST, Intel VMD Controller) 
+- Mód disku = RAID na AHCI
+- Nebo naimportujte ovladače řadiče = ovladače na stránkách zařízení (Deska nebo Notebook)
 ![full](22.png) 
 V případě reinstalace systému je nutné pro optimální fungování odstranit všechny oddíly systémového disku.
 ![full](23.png)
