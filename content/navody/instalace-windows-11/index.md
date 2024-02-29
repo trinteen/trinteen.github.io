@@ -52,7 +52,7 @@ Vyberte lokaci pro uložení ISO souboru a jeho jméno.
 ![full](14.png)
 
 *B) Načtení instalace z vytvořené flash*
-Flash vytvořena pomocí bodu 6. Flash vytvořena pomocí zápisu z ISO souboru z bodu 7. A to pomocí programů jako Rufus, Balena Etcher, Ventoy apod.
+Flash vytvořena pomocí bodu 6. Flash vytvořena pomocí zápisu z ISO souboru z bodu 7. A to pomocí programů jako Rufus, Balena Etcher, [Ventoy](../ventoy-zavadeni-obrazu-medii/) apod.
 Flash zavedeme pomocí funkce boot menu nebo úpravou pořadí zavedení disku tj. boot order v rámci BIOSu.
 
 *C) Průběh instalace Windows 11*
