@@ -21,9 +21,9 @@ Ale když máte kolem sebe komunitu Linuxáků, kteří sdílí stejné nadšen�
 ----------
 
 Par discord komunit:
-- [Arch Linux cz&sk](https://discord.gg/6Km2YaC4)
-- [Linux CZ/SK](https://discord.gg/EMPH9PnA)
-- [GeekBoy - Technologie, počítače a hry](https://discord.gg/kPRj3QMq)
+- [Arch Linux cz&sk](https://discord.gg/kWppKywsgm)
+- [Linux CZ/SK](https://discord.gg/DnFmQdYN6S)
+- [GeekBoy - Technologie, počítače a hry](https://discord.gg/geekboy)
 
 ---------
 
