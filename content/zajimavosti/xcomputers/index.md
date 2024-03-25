@@ -13,9 +13,7 @@ V rámci výzvy o návrh trička pro X-COMputers, se mi podařilo navrhnout a re
 ![full](1.png)
 ![full](2.jpg)
 
-\
-\
-*Odkazy:*
+### Odkazy
 
 X-COMputers.eu - Nejvýkonnější počítače v ČR - [Web](https://www.x-computers.eu/), [Facebook](https://www.facebook.com/xcomputers.eu), [Youtube](https://www.youtube.com/user/xcomputerseu), [Twitch](https://www.twitch.tv/xcomputerseu)
 

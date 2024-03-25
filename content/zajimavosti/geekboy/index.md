@@ -14,9 +14,7 @@ Od té doby se GeekBoy discord posunul a získal, tak Discord partner.
 
 
 
-\
-\
-*Odkazy:*
+### Odkazy
 
 Web: [GeekBoy.cz](https://www.geekboy.cz/)
 

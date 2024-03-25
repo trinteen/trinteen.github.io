@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        {{- partial "head.html" . -}}
+        {{- block "head" . -}}{{ end }}
+    </head>
+    
+    
+    <body>
+        
+        <div id="desktop">
+          
+            <div id="js_menu" style="display: none;">
+                <div class="top">
+                    <a href="{{ .Site.BaseURL }}">
+                        <img src="{{ .Site.BaseURL }}favicon.jpg">
+                    </a>
+                    <h2>{{ .Site.Title }}</h2>
+                </div>
+                <div class="split">
+                </div>
+                <div class="menu">
+                    <div class="leftside">
+                        {{ range (.Site.RegularPages.GroupBy "Section") }}
+                            <a class="item" href="#" onclick="menu_section('{{ .Key }}_box');">
+                                {{ with $.Site.GetPage "section" .Key }}
+                                    <img src="{{ .Site.BaseURL }}wxp/icons/{{ .Params.icon }}">
+                                    <span>{{ .Title }}</span>
+                                {{ end }}
+                            </a>
+                        {{ end }}
+                    </div>
+                    <div class="rightside" id="pages">
+                        {{ range (.Site.RegularPages.GroupBy "Section") }}
+                            <div id="{{ .Key }}_box" style="display: none;">
+                                {{ range .Pages }}
+                                    <a href="{{ .RelPermalink }}">
+                                        <img src="{{ .Site.BaseURL }}wxp/icons/file.png">
+                                        <span>{{ .Title }}</span>
+                                    </a>
+                                {{ end }}
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>Poslední aktualizace</p>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="page">
+
+                    <div id="window">
+                        <div class="titlebar">
+                            <div class="title">{{ .Title }}</div>
+                            <a  class="close" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}wxp/ui/close.png"></a>
+                        </div>
+                        <div class="toolbar">
+                            <div class="main">
+                                {{ if .PrevPage }}
+                                <a class="backbutton" href="{{ .PrevPage.Permalink }}">
+                                    <img src="{{ .Site.BaseURL }}wxp/ui/backbutton.png">
+                                </a>
+                                {{ end }}
+
+                                {{ if .NextPage }}
+                                <a class="nextbutton" href="{{ .NextPage.Permalink }}">
+                                    <img src="{{ .Site.BaseURL }}wxp/ui/nextbutton.png">
+                                </a>
+                                {{ end }}
+                            </div>
+                            
+                            <div class="right">
+                                <!--
+                                <a class="printbutton" href="#" onclick="print();">
+                                    <img src="{{ .Site.BaseURL }}wxp/icons/print.png">
+                                </a>
+                                -->
+                            </div>
+                        </div>
+                        <div class="address">
+                            <span>Umístění</span>
+                            <div class="location">
+                                {{ $cur_page := .Title }}
+                                {{ $cur_section := .Section }}
+                                {{ range (.Site.RegularPages.GroupBy "Section") }}
+                                    {{ $cur_key := .Key }}
+                                    {{ with $.Site.GetPage "section" .Key }}
+                                        {{ if eq $cur_section $cur_key }}
+                                            C:\{{ .Title }}\{{ $cur_page }}
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h2>{{ .Title }}</h2>
+                            <div class="split"></div>
+                            <article>{{ .Content }}</article>
+                        </div>
+                        <div class="information">
+                            
+                            {{ if .PublishDate }}
+                                <span>
+                                Publikováno: <strong>{{ .PublishDate | time.Format "02.01.2006 15:04:05" }}</strong>
+                                </span>
+                            {{ end }}
+
+                            {{ if .Len }}
+                                <span>
+                                Velikost: <strong>{{ .Len }} bajtů</strong>
+                                </span>
+                            {{ end }}
+
+                            {{ if .WordCount }}
+                                <span>
+                                Počet slov:  <strong>{{ .WordCount }}</strong>
+                                </span>
+                            {{ end }}
+
+                            {{ if .ReadingTime }}
+                                <span>
+                                Doba čtení: <strong>{{ .ReadingTime }} min</strong>
+                                </span>
+                            {{ end }}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="panel">
+
+            <div class="bottom">
+                <div class="left">
+                    <span id="js_menu_button">MENU</span>
+                </div>
+    
+                <div class="center">
+    
+                </div>
+    
+                <div class="right">
+                    <span id="js_time"></span>
+                </div>
+            </div>
+
+        </div>
+
+        {{- partial "script.html" . -}}
+        {{- block "script" . -}}{{ end }}
+
+    </body>
+
+</html>

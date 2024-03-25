@@ -1,7 +1,7 @@
 baseURL = 'https://trinteen.github.io/'
 languageCode = "cz-cs"
 title = "MY LIFE IS ZEROS AND ONES"
-theme = "hugo-theme-stack"
+theme = "wxp"
 sectionPagesMenu = "main"
 pluralizelisttitles = "false"
 timeout = 180000

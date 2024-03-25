@@ -44,14 +44,16 @@ Jako příklad jsem vytvořil virtuální počítač ve **VirtualBoxu** s náled
 
 ### Další zajímavé testy
 
+{{< table >}}
 | CPU                      | RAM   | DISK   | Čas instalace | Čas obnovy | Rozdíl času  | Poznámka                                 |
 |--------------------------|-------|--------|---------------|------------|--------------|------------------------------------------|
 | Intel i7 8700K (6j)      | 32 GB | 250 GB | 9 minut       |  14 minut  | 5 minut      | Počítač                                  |
 | Intel i7 8700K (4j)      |  8 GB | 127 GB | 9 minut       |  15 minut  | 6 minut      | Microsoft Hyper-V                        |
 | Intel i7 8700K (4j)      |  8 GB |  64 GB | 11 minut      |  18 minut  | 7 minut      | VMware Workstation Player (free)         |
 | Intel i5 4300U (2j)      |  8 GB | 250 GB | 15 minut      |  23 minut  | 8 minut      | Notebook                                 |
-| Intel i7 8700K (4j)      |  8 GB |  60 GB | 20 minut      |  60 minut  | 40 minut     | Oracle VirtualBox (data v tomto článku ) |
+| Intel i7 8700K (4j)      |  8 GB |  60 GB | 20 minut      |  60 minut  | 40 minut     | Oracle VirtualBox (data v tomto článku)  |
 | Intel Celeron J3355 (2j) |  8 GB |  60 GB | 73 minut      | 240 minut  | 167 minut    | Synology VMM                             |
+{{</ table >}}
 
 ### Po nainstalování čistého systému
 
@@ -109,7 +111,8 @@ Program obnovy si dovolil smazat 2 systémové programy z nově nainstalovaného
 Výsledkem tohoto testu, je potvrzení známé reality a to, že program **Obnova počítače do továrního nastavení** není:
 
 - Rychlá záchrana = V případě selhání se uživatel potřebuje co nejrychleji vrátit do funkčního/použitelného systému a pokračovat v práci. Čekat pár minut a nainstalovat nutné programy, nebo čekat dokonce i hodiny a bát se, že ani potom to nebude fungovat. 
-    - Doporučuji: Bitovou kopii, Klon disku a Zálohování
+    
+        Doporučuji: Bitovou kopii, Klon disku a Zálohování
 
 - Spolehlivá cloud obnova = Ze zkušenosti víme, proces obnovy může kdykoliv selhat. Pak ne všichni mají rychlý a stabilní internet. Tato možnost obnovy mi přijde velmi riziková a byly by to další minuty navíc z důvodu stahování dat z netu.
 
