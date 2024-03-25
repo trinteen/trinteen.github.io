@@ -1,5 +1,6 @@
 
 window.onload = () => {
+    clippy();
     js_time();
 }
 
@@ -35,4 +36,20 @@ const menu_section = (section_box) => {
     })
     const section = document.querySelector("#" + section_box);
     section.style.display = "";
+}
+
+//clippy:
+const clippy = (value) => {
+    var newvisitor = localStorage.getItem("newvisitor");
+    var clip = document.querySelector("#clippy");
+    if(value == null){
+        if(newvisitor == null){
+            localStorage.setItem("newvisitor", 1);
+            clip.style.display = "block";
+        } else {
+            clip.style.display = "none";
+        }
+    } else if (value == "exit"){
+        clip.style.display = "none";
+    }
 }

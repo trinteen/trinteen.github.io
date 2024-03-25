@@ -1,0 +1,37 @@
+<div id="js_menu" style="display: none;">
+    <div class="top">
+        <a href="{{ .Site.BaseURL }}">
+            <img src="{{ .Site.BaseURL }}favicon.jpg">
+        </a>
+        <h2>{{ .Site.Title }}</h2>
+    </div>
+    <div class="split">
+    </div>
+    <div class="menu">
+        <div class="leftside">
+            {{ range (.Site.RegularPages.GroupBy "Section") }}
+                <a class="item" href="#" onclick="menu_section('{{ .Key }}_box');">
+                    {{ with $.Site.GetPage "section" .Key }}
+                        <img src="{{ .Site.BaseURL }}wxp/icons/{{ .Params.icon }}">
+                        <span>{{ .Title }}</span>
+                    {{ end }}
+                </a>
+            {{ end }}
+        </div>
+        <div class="rightside" id="pages">
+            {{ range (.Site.RegularPages.GroupBy "Section") }}
+                <div id="{{ .Key }}_box" style="display: none;">
+                    {{ range .Pages }}
+                        <a href="{{ .RelPermalink }}">
+                            <img src="{{ .Site.BaseURL }}wxp/icons/file.png">
+                            <span>{{ .Title }}</span>
+                        </a>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="bottom">
+        <p>Poslední aktualizace</p>
+    </div>
+</div>
