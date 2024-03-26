@@ -580,7 +580,7 @@ body {
 
 #gallery-show .content .image {
     flex: 1 0 auto;
-    width: 100%;
+    width: calc(100% - 40px);
     height: calc(100% - 50px - 40px);
     display: flex;
     justify-content: center;
