@@ -5,6 +5,7 @@
         {{- block "head" . -}}{{ end }}
     </head>
     <body>
+        {{ partial "gallery.html" . }}
         <div id="desktop">
             {{ partial "clippy.html" . }}
             {{ partial "menu.html" . }}

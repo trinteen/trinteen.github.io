@@ -525,6 +525,89 @@ body {
     font-family: "Trebuchet MS", "Tahoma";
 }
 
+#gallery {
+}
+
+#gallery .album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0;
+}
+
+#gallery li {
+    flex-basis: 150px;
+    list-style-type: none;
+}
+
+#gallery .thumbnail {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #B3B3B3;
+    display: block;
+}
+
+#gallery .thumbnail:hover {
+    background: #B3B3B3;
+}
+
+#gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#gallery img:hover {
+    cursor: url("/wxp/cur/pointer.png"), pointer
+}
+
+#gallery-show {
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    position: fixed;
+    background: black;
+    display: none;
+}
+
+#gallery-show .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#gallery-show .content .image {
+    flex: 1 0 auto;
+    width: 100%;
+    height: calc(100% - 50px - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#gallery-show .content .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#gallery-show .content .close {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery-show .content .close a,
+#gallery-show .content .close a:hover,
+#gallery-show .content .close a:active {
+    color: white;
+}
+
 #panel .bottom {
     color: #ffffff;
     background: #316AC5;

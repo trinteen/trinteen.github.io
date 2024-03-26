@@ -26,18 +26,14 @@
 {{- end -}}
 
 <div class="image">
-<img src="{{ $Permalink }}"
-	{{ with $Width }}width="{{ . }}"{{ end }}
-	{{ with $Height }}height="{{ . }}"{{ end }}
-	{{ with $Srcset }}srcset="{{ . }}"{{ end }}
-	loading="lazy"
-	{{ with $alt }}
-		alt="{{ . }}"
-	{{ end }}
-	{{ if $galleryImage }}
-		class="gallery-image" 
-		data-flex-grow="{{ div (mul $image.Width 100) $image.Height }}"
-		data-flex-basis="{{ div (mul $image.Width 240) $image.Height }}px"
-	{{ end }}
->
+	<a href="#" onclick="gallery('{{ $Permalink | absURL }}');">
+		<img src="{{ $Permalink }}"
+			{{ with $Width }}width="{{ . }}"{{ end }}
+			{{ with $Height }}height="{{ . }}"{{ end }}
+			{{ with $Srcset }}srcset="{{ . }}"{{ end }}
+			{{ with $alt }}
+				alt="{{ . }}"
+			{{ end }}
+		>
+	</a>
 </div>
