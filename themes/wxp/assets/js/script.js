@@ -1,7 +1,7 @@
 
 window.onload = () => {
-    clippy();
     js_time();
+    clippy();
 }
 
 //js_time:
