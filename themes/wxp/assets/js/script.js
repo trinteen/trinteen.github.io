@@ -40,10 +40,9 @@ const menu_section = (section_box) => {
 
 //clippy:
 const clippy = (value) => {
-    var newvisitor = localStorage.getItem("newvisitor");
     var clip = document.querySelector("#clippy");
     if(value == null){
-        if(newvisitor == null){
+        if(localStorage.getItem("newvisitor") == null){
             localStorage.setItem("newvisitor", 1);
             clip.style.display = "block";
         } else {
@@ -51,5 +50,8 @@ const clippy = (value) => {
         }
     } else if (value == "exit"){
         clip.style.display = "none";
+    } else if (value == "show"){
+        localStorage.removeItem("newvisitor");
+        clip.style.display = "block";
     }
 }
