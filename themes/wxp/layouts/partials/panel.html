@@ -4,23 +4,6 @@
             <span id="js_menu_button">MENU</span>
         </div>
         <div class="center">
-            <div id="application" onclick="application();">
-                <div class="icon">
-                    <img src="{{ .Site.BaseURL }}wxp/icons/file.png">
-                </div>
-                <div class="label">
-                    
-                    {{ $tit := (.Title | len ) }}
-
-                    {{ if (le $tit 27) }}
-                        {{ .Title }}
-                    {{ else }}
-                        {{ substr .Title 0 27}}...           
-                    {{ end}}
-
-                </div>
-            </div>
-            <div class="spacer"></div>
         </div>
         <div class="right">
             <span id="js_time"></span>

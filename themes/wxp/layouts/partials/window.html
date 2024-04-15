@@ -1,11 +1,7 @@
-<div id="window" onresize="window_resize();" onmousemove="window_resize();">
+<div id="window">
     <div class="titlebar">
         <div class="title">{{ .Title }}</div>
-        <div class="controls">
-            <a  class="minimalize" href="#" onclick="window_minimalize();"><img src="{{ .Site.BaseURL }}wxp/ui/minimalize.png"></a>
-            <a  class="maximalize" href="#" onclick="window_maximalize();"><img src="{{ .Site.BaseURL }}wxp/ui/maximalize.png"></a>
-            <a  class="close" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}wxp/ui/close.png"></a>
-        </div>
+        <a  class="close" href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}wxp/ui/close.png"></a>
     </div>
     <div class="toolbar">
         <div class="main">
