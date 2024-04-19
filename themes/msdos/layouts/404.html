@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        {{- partial "head.html" . -}}
+        {{- block "head" . -}}{{ end }}
+    </head>
+
+    <body id="bsod">
+        <script>
+            document.onkeypress = function(e) {
+                location.href = "https://trinteen.cz/";
+            }
+        </script>
+
+        {{ $seed := now.Unix }}
+        <div class="box">
+            <div class="dialog">
+                <div class="border">
+                    <span>{{ .Title }}</span>
+                    <div class="msg">
+                    <p>Fatální chyba při prohlížení nastala u procesu {{ md5 $seed }}.</p>
+                    <p>Aktuální aplikaci prosím ukončete.</p>
+                    <br>
+                    <p><a href="{{ .Site.BaseURL }}">Stiskněte libovolnou klávesu ...</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

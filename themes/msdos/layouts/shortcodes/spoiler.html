@@ -1,0 +1,25 @@
+{{ $unique_id := substr (md5 .Inner) 0 16 }}
+
+<div id="spoiler_main">
+    <div id="spoiler_{{$unique_id}}">
+        <div class="titlebar">
+            <div class="title" onclick="spoiler_show('{{$unique_id}}');"><span> >> </span> {{ .Get `text` }}</div>
+        </div>
+        <div class="content">
+            <div class="text">
+                {{ .Inner }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function spoiler_show(id){
+        var box = document.querySelector('#spoiler_' + id + ' .content');
+        if(box.style.display == "block"){
+            box.style.display = "none";
+        } else {
+            box.style.display = "block";
+        }
+    }
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  
+  <body>
+    
+    {{ partial "gallery.html" . }}
+
+    <div id="main">
+
+      <div class="header-box">
+        <div class="header">
+          {{ partial "header.html" . }}
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="menu-box">
+          <div class="menu">
+            {{ partial "menu.html" . }}
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="content">
+            {{ block "main" . }}{{ end }}
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-box">
+        <div class="footer">
+          {{ partial "footer.html" . }}
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

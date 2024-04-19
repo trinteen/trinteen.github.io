@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ partialCached "head/css.html" . }}
+
+
+{{ $js := resources.Get "js/main.js" }}
+{{ $javascript := $js  | resources.Fingerprint "sha256" }}
+<script defer language="javascript" type="text/javascript"  src="{{ $javascript.RelPermalink | urlize | relURL }}"></script>
+

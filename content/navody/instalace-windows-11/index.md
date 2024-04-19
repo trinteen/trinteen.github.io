@@ -6,9 +6,10 @@ draft: true
 
 ![full](1.png)
 
-        Tento návod lze využít i pro instalaci Windows 10. První fáze instalace je podobná.
-        Odkaz: https://www.microsoft.com/cs-cz/software-download/windows10 
-
+```
+Tento návod lze využít i pro instalaci Windows 10. První fáze instalace je podobná.
+Odkaz: https://www.microsoft.com/cs-cz/software-download/windows10 
+```
 
 ### Budeme potřebovat:
 - Internet - pro stažení programu a dat při tvorbě flasky
@@ -85,8 +86,10 @@ Press any key to boot from CD or DVD = Stiskem libovolné klávesy budete zavád
 
 4. Zadáme licenční klíč, který jsme zakoupili. Pokud je klíč uložen v BIOSu, nebude toto okno zobrazeno.
 
-        POZOR: Pro aktivaci lze použít licenční klíč z Windows 10
-        Klíč je možné zadat i později pomocí možnosti Nemám kód Product Key ('Postup v ad D)1.)
+```
+POZOR: Pro aktivaci lze použít licenční klíč z Windows 10
+Klíč je možné zadat i později pomocí možnosti Nemám kód Product Key ('Postup v ad D)1.)
+```
 
 ![full](18.png)
 
@@ -144,8 +147,10 @@ Pokud máme internet, tak přejdeme k bodu 15.
 
 ![full](30.png)
 
-        Pokud nastane situace, že se nemůžete připojit k internetu.
-        Otevřeme si příkazový řádek klávesovou zkratka SHIFT+F10. Napíšeme příkaz: "OOBE\BYPASSNRO".
+```
+Pokud nastane situace, že se nemůžete připojit k internetu.
+Otevřeme si příkazový řádek klávesovou zkratka SHIFT+F10. Napíšeme příkaz: "OOBE\BYPASSNRO".
+```
 
 ![full](31.png)
 
@@ -171,8 +176,10 @@ Klikneme na Pokračovat s omezenou instalací
 
 Účet MS nechceme používat. Aktivujeme si tedy offilne účet!
 
-        Uživatelské jméno: admin
-        Heslo: password
+```
+Uživatelské jméno: admin
+Heslo: password
+```
 
 ![full](37.png)
 
@@ -188,7 +195,9 @@ Zvolíme si jméno uživatele.
 
 ![full](40.png)
 
-        Heslo necháme prázdné = Automatické přihlášení na plochu
+```
+Heslo necháme prázdné = Automatické přihlášení na plochu
+```
 
 ![full](41.png)
 
