@@ -26,7 +26,7 @@
 {{- end -}}
 
 <div class="image">
-	<a href="#" onclick="gallery('{{ $Permalink | absURL }}');">
+	<a onclick="gallery('{{ $Permalink | absURL }}');">
 		<img src="{{ $Permalink }}"
 			{{ with $Width }}width="{{ . }}"{{ end }}
 			{{ with $Height }}height="{{ . }}"{{ end }}
