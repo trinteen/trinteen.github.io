@@ -15,7 +15,7 @@ Odkaz: https://www.microsoft.com/cs-cz/software-download/windows10
 - Internet - pro stažení programu a dat při tvorbě flasky
 - Zařízení s Windows
 - Uložiště o minimální velikosti 8GB (Externí disk, USB flash disk, SD karta)
-- Licenci - Najdeme klíč k Windows (štítek, email, a nebo vytahnéme z aktuální instalace pomocí vbs scriptu [ZDE](cdkey.vbs))
+- Licenci - Najdeme klíč k Windows (štítek, email, a nebo vytáhnéme z aktuální instalace pomocí vbs scriptu [ZDE](cdkey.vbs))
 - Trpělivost :)
 
 
@@ -162,7 +162,7 @@ Klikneme na Pokračovat s omezenou instalací
 
 ![full](33.png)
 
-13. Pojmenování zařízeni
+13. Pojmenování zařízení
 
 ![full](34.png)
 
@@ -174,7 +174,7 @@ Klikneme na Pokračovat s omezenou instalací
 
 ![full](36.png)
 
-Účet MS nechceme používat. Aktivujeme si tedy offilne účet!
+Účet MS nechceme používat. Aktivujeme si tedy offline účet!
 
 ```
 Uživatelské jméno: admin
@@ -230,12 +230,12 @@ Heslo necháme prázdné = Automatické přihlášení na plochu
 ![full](53.png)
 
 ### D) Aktivace, aktualizace a ovladače
-1. Zkontrolujeme jestli se Windows aktivoval
+1. Zkontrolujeme, jestli se Windows aktivoval
 
 ![full](54.png)
 
 Najdeme v Nastavení -> Aktivace
-a pokud  jsme neaktivovali, tak klič zadáme pomocí tlačítka Změnit 
+a pokud jsme neaktivovali, tak klič zadáme pomocí tlačítka Změnit 
 
 ![full](55.png)
 

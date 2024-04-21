@@ -28,7 +28,7 @@ Par discord komunit:
 ---------
 
 
-A díky nim přijdete na to že, s Linuxem je ještě větší radost pracovat a hrát si s ním. Tímto návodem bych ukázal že nainstalovat Arch Linux není zas tak složíté, jak se může na první pohled zdát. Jen to chce chuť, čas a nebát se selhání z chyb, běhenm instalace.
+A díky nim přijdete na to že, s Linuxem je ještě větší radost pracovat a hrát si s ním. Tímto návodem bych ukázal že nainstalovat Arch Linux není zas tak složité, jak se může na první pohled zdát. Jen to chce chuť, čas a nebát se selhání z chyb, během instalace.
 
 ### Co je to Arch Linux
 Arch Linux je nezávislá linuxová distribuce vytvořená Juddem Vinetem, jenž se inspiroval distribucí CRUX Linux. Arch Linux je vyvíjen jako nenáročný, odlehčený a snadno přizpůsobitelný systém. (zdroj: wikipedia.org)
@@ -36,7 +36,7 @@ Arch Linux je nezávislá linuxová distribuce vytvořená Juddem Vinetem, jenž
 ### Proč právě Arch Linux?
 Repozitář AUR (Arch User Repository), kam mohou vývojáři a uživatelé přidávat další software, jehož balíčky chybí v oficiálních zdrojích, a hlasovat o jejich zařazení do komunitního repozitáře. 
 
-Doporučím doplnit repozitář [**Chaotic-AUR**](https://aur.chaotic.cx/), který automaticky předkompiluje balíčky z AUR, a ušetří se tak hromada času při instalaci programů.
+Doporučím doplnit repozitář [**Chaotic-AUR**](https://aur.chaotic.cx/), který automaticky překompiluje balíčky z AUR, a ušetří se tak hromada času při instalaci programů.
 
 
 # A hurá do instalace Arch Linuxu
@@ -70,7 +70,7 @@ Flash zavedeme pomocí BIOS/UEFI a to změnou v BOOT ORDER, kdy dáme flash jako
 V **GNU GRUB menu** zvolíme první volbu **Arch Linux install medium...**
 ![full](1.png)
 
-2) Závádění systému do paměti
+2) Zavádění systému do paměti
 ![full](2.png)
 
 3) Konzole úspěšně načtena
@@ -79,7 +79,7 @@ V **GNU GRUB menu** zvolíme první volbu **Arch Linux install medium...**
 4) Ověříme nebo nastavíme připojení k internetu.
 Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálnější balíčky pro systém, je tedy nutné zajistit stabilní připojení.
 
-    a) Použijeme funkci **ping** na server google.com, kterou si ověříme zda komunikujeme s daným serverem, resp. jsme připojeni k internetu. Kombinací kláves **CTRL+C** proces ping ukončíme.
+    a) Použijeme funkci **ping** na server google.com, kterou si ověříme, zda komunikujeme s daným serverem, resp. jsme připojeni k internetu. Kombinací kláves **CTRL+C** proces ping ukončíme.
     ![full](4.png)
 
     ```

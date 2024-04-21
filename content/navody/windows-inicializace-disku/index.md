@@ -21,7 +21,7 @@ Pravým tlačítkem myši klikneme na **START** a vyberte **Správa disků**
 
 2. Inicializace disku
 ![full](2.jpg)
-Po otevření správce disku vyskočí okno **Inicializace disku**, kde vybeme v typ oddílu: **GPT** a potvrdíme **OK**.
+Po otevření správce disku vyskočí okno **Inicializace disku**, kde vybereme v typ oddílu: **GPT** a potvrdíme **OK**.
 
 
 ### C) Vytvoření oddíl

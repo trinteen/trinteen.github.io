@@ -33,13 +33,13 @@ V nabídce **Option\Partition Style** zkontrolujeme typ oddílu:\
 ![full](7.jpg)
 ![full](8.jpg)
 
-7. Vyčkáme na dokonční instalace.
+7. Vyčkáme na dokončení instalace.
 ![full](9.jpg)
 ![full](10.jpg)
 
 ### Prostředí Ventoy
 
-1. Do nově vytvořeného odíllu (disku) nahrajeme naše soubory
+1. Do nově vytvořeného oddíllu (disku) nahrajeme naše soubory
 ![full](11.jpg)
 
 2. Zavedení nové Ventoy flashky\

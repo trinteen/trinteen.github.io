@@ -27,7 +27,7 @@ Ano, jsou případy, kdy je tovární nastavení úspěšné. Dříve nebo pozd�
 
 ### Vytvoření virtuálního počítače
 
-Jako příklad jsem vytvořil virtuální počítač ve **VirtualBoxu** s náledujícím nastavením:
+Jako příklad jsem vytvořil virtuální počítač ve **VirtualBoxu** s následujícím nastavením:
 
 - Procesor: 4 jádra
 - Paměť RAM: 8 GB
