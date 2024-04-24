@@ -226,6 +226,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     ```
     ln -sf /usr/share/zoneinfo/Europe/Prague /etc/localtime
+    
     hwclock --systohc
     ```
 
