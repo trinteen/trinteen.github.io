@@ -13,7 +13,7 @@ Když lidé z discordu [GeekBoy](/zajimavosti/geekboy/) diskutovali o nakupován
 Doručení bylo rychlé. Balík mi doručovalo We|Do.
 ![full](status.jpg)
 
-### Co je T620 (GX-415GA)
+### Co je HP T620 (GX-415GA)
 Jde o konfiguraci se 4 jádrovým procesorem **AMD GX-415GA** s taktem **1,5GHz**, osazený **16GB DDR3** pamětí a uložištěm **128GB** M.2 mSATA SSD diskem od Samsungu (model: MZNLN128HAHQ-000H1). Počítač byl doručen vč. stojánku a adaptéru (bez kabelu do sítě - trojlístek koncovka). Pro více informací o tomto počítači najdete na stránkách [HP](https://support.hp.com/us-en/document/c04017240). Naměřená provozní teplota se pohybuje okolo **50°C**, což je na čistě pasivně chlazený počítač bezva.
 ![full](1.jpg)
 ![full](2.jpg)
