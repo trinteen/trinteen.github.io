@@ -349,9 +349,9 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 7) Povolení nainstalované služby
     
     ```
-    systemctl enable NetworkManager.service
+    systemctl enable --now NetworkManager.service
     
-    systemctl enable avahi-daemon.service
+    systemctl enable --now avahi-daemon.service
     ```
 
 8) Ukončení relace v **arch-chroot**
@@ -671,9 +671,7 @@ Repozitář multilib obsahuje 32bitový software a knihovny, které lze použít
 3) Povolíme a zapneme službu
 
     ```
-    systemctl enable smb.service
-    
-    systemctl start smb.service
+    systemctl enable --now smb.service
     ```
 
 
