@@ -385,6 +385,28 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 ![full](13.png)
 
 
+### Znovu připojení k internetu (pro wifi)
+
+1) Jméno wifi zařízení
+    
+    ```
+    nmcli device
+    ```
+
+2) Připojení k wifi
+
+    ```
+    nmcli device ZAŘÍZENÍ connect JMÉNO_WIFI password HESLO
+    ```
+
+3) Oveření připojení
+
+    ```
+    ping google.com
+    ```
+
+
+
 ### Vytvoření standartního uživatele
 
 1) Vytvoříme standartního uživatele
