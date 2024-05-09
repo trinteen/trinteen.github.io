@@ -341,7 +341,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 6) Instalace GRUB
 
     ```
-    grub-install --target=x86_64-efi --efi-directory=/boot/
+    grub-install -\-target=x86_64-efi -\-efi-directory=/boot/
     
     grub-mkconfig -o /boot/grub/grub.cfg
     ```
