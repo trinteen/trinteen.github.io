@@ -273,6 +273,12 @@ a {
   font-family: monospace;
 }
 
+#main .content-box .content article table,
+#main .content-box .content article table th,
+#main .content-box .content article table td {
+  font-family: monospace;
+}
+
 /*
   SPOILER
 */
