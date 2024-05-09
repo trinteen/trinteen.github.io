@@ -268,6 +268,8 @@ a {
 
 #main .content-box .content article .text .codeblock p {
   text-align: left;
+  padding: 0;
+  line-height: 20px;
 }
 
 /*

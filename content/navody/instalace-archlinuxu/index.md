@@ -157,7 +157,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     
     ```
     mkswap /dev/sda2
-    
+
     swapon /dev/sda2
     ```
 
@@ -312,7 +312,6 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     ```
     127.0.0.1   localhost
 
-    
     ::1         localhost
     
     127.0.1.1   navod.localdomain   navod
@@ -450,11 +449,11 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     ```
     Section "InputClass"
     
-        Identifier "system-keyboard"
-	
-        MatchIsKeyboard "on"
-	
-        Option "XkbLayout" "cz"  
+    Identifier "system-keyboard"
+
+    MatchIsKeyboard "on"
+    
+    Option "XkbLayout" "cz"      
     
     EndSection
     ```
