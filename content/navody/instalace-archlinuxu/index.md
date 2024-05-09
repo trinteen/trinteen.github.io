@@ -311,7 +311,10 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     ```
     127.0.0.1   localhost
+
+    
     ::1         localhost
+    
     127.0.1.1   navod.localdomain   navod
     ```
 
@@ -339,6 +342,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     ```
     grub-install --target=x86_64-efi --efi-directory=/boot/
+    
     grub-mkconfig -o /boot/grub/grub.cfg
     ```
 
@@ -346,6 +350,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     
     ```
     systemctl enable NetworkManager.service
+    
     systemctl enable avahi-daemon.service
     ```
 
@@ -363,6 +368,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     ```
     umount /mnt/boot
+    
     umount /mnt/
     ```
 
@@ -443,9 +449,13 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     
     ```
     Section "InputClass"
+    
         Identifier "system-keyboard"
-	    MatchIsKeyboard "on"
-	    Option "XkbLayout" "cz"  
+	
+        MatchIsKeyboard "on"
+	
+        Option "XkbLayout" "cz"  
+    
     EndSection
     ```
     
@@ -588,6 +598,7 @@ Repozitář multilib obsahuje 32bitový software a knihovny, které lze použít
 
     ```
     #[multilib]
+    
     #Include = /etc/pacman.d/mirrorlist
     ```
 
@@ -595,6 +606,7 @@ Repozitář multilib obsahuje 32bitový software a knihovny, které lze použít
 
     ```
     [multilib]
+    
     Include = /etc/pacman.d/mirrorlist
     ```
 
@@ -638,6 +650,7 @@ Repozitář multilib obsahuje 32bitový software a knihovny, které lze použít
 
     ```
     systemctl enable smb.service
+    
     systemctl start smb.service
     ```
 
