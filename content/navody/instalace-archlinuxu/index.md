@@ -185,6 +185,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 
     ```
     mkdir boot
+    
     mount /dev/sda1 boot/
     ```
 
