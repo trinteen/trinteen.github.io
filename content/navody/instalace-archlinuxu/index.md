@@ -157,6 +157,7 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
     
     ```
     mkswap /dev/sda2
+    
     swapon /dev/sda2
     ```
 
