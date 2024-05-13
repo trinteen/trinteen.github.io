@@ -4,6 +4,9 @@ date: 2024-05-13T15:21:47+02:00
 draft: true
 ---
 
+# Rychlá záchrana?
+Linux Mint je Linuxová distribuce, která je možná běžet rovnou z Flash disku (se zápisem do RAM). Nabídne tím, tak snadnou a rychlou možnost záchrany dat bez nutnosti bez nutnosti běhu jeho systému anebo i jako základní diagnostický program - často prozradí při samotném načítaní více jak system Windows samotný.
+
 ### Úvod
 
 **Linux Mint** je linuxová distribuce pro notebooky a osobní počítače. Distribuce je založena na Ubuntu/Debianu ale  nabízí jiné aplikace a jiné uživatelské rozhraní. Mint je konzervativní distribuce s tradičním rozvržením desktopu. Uživatelé Windows si na něj snadno zvyknou. V základu jsou na výběr prostřední Cinnamon, MATE nebo Xfce.
