@@ -645,7 +645,7 @@ Repozitář multilib obsahuje 32bitový software a knihovny, které lze použít
 1) Nainstalujeme pořebné balíčky
 
     ```
-    paru --needed -S samba smbclient gvfs gvfs-smb
+    paru -\-needed -S samba smbclient gvfs gvfs-smb
     ```
 
 2) Vytvoříme konfigurační soubor **/etc/samba/smb.conf**
@@ -671,7 +671,7 @@ Repozitář multilib obsahuje 32bitový software a knihovny, které lze použít
 3) Povolíme a zapneme službu
 
     ```
-    systemctl enable --now smb.service
+    systemctl enable -\-now smb.service
     ```
 
 
