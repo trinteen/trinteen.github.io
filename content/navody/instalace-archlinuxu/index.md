@@ -349,9 +349,9 @@ Instalace probíhá prostřednictvím internetu, kdy se stahují nejaktuálněj�
 7) Povolení nainstalované služby
     
     ```
-    systemctl enable --now NetworkManager.service
+    systemctl enable -\-now NetworkManager.service
     
-    systemctl enable --now avahi-daemon.service
+    systemctl enable -\-now avahi-daemon.service
     ```
 
 8) Ukončení relace v **arch-chroot**
@@ -595,7 +595,7 @@ Budeme pracovat v terminálu (konzole, terminál, ...)
     Příklad:
 
     ```
-    paru --needed --noconfirm -Syu <balík/y>
+    paru -\-needed -\-noconfirm -Syu <balík/y>
     ```
 
     Proveď sychnronizaci repozitáře, nainstaluj jen potřebné balíčky a nevyžaduj potvrzení.
