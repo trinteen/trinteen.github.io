@@ -10,7 +10,7 @@ Snadná a rychlá práce s disky - zálohování, servis
 
 ### Magic General (starší generace) (Dálkový ovladač)
 ![full](2.jpg)
-Nechce se Vám stávat z postele, tak si pořiďte ovladač k PC. Fukce jak klávesnice, tak i myši.
+Nechce se Vám stávat z postele, tak si pořiďte ovladač k PC. Funkce jak klávesnice, tak i myši.
 
 ### WD Elements Desktop - 3TB (Externí disk)
 ![full](3.jpg)

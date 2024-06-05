@@ -1,0 +1,39 @@
+<!-- MENU PC -->
+<div id="menu">
+  <div class="title">Menu</div>
+  <div class="content">
+    <ul>
+      {{ range (.Site.RegularPages.GroupBy "Section") }}
+        {{ with $.Site.GetPage "section" .Key }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </li>
+        {{ end }}
+      {{ end }}  
+    </ul>
+  </div>
+</div>
+
+<!-- MENU MOBILE-->
+<div id="menumobile">
+  <div class="title" onclick="showmenu();">Menu</div>
+  <div class="content" style="display: none;">
+    <ul>
+      {{ range (.Site.RegularPages.GroupBy "Section") }}
+        {{ $v := .Key }}
+        {{ with $.Site.GetPage "section" .Key }}
+          <li class="menu_{{ $v }}">
+            <a class="category" onclick="showsubmenu('menu_{{ $v }}');">{{ .Title }}</a>
+            <ul class="submenu" style="display: none;">
+              {{ range .Pages }}
+                <li><a class="post" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div>

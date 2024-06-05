@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+
+    {{ partial "gallery.html" . }}
+    
+    <div id="main">
+      
+      <div id="header">
+        {{ partial "header.html" . }}
+      </div>
+
+      <div id="content">
+        
+        <div class="menu">
+          {{ partial "menu.html" . }}
+        </div>
+        
+        <div class="page">
+            
+          <article>
+            <h1 class="title">Vítej na mém webu</h1>
+  
+            <p>
+            Počítač a IT je můj život. Tato oblast je nikdy nekončící studium
+            </p>
+          </article>
+
+        </div>
+
+        <div class="side">
+          {{ partial "side.html" . }}
+        </div>
+      </div>
+
+      <div id="footer">
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+
+  </body>
+</html>

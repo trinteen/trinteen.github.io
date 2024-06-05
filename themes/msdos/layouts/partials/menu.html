@@ -1,9 +1,0 @@
-<ul>
-  {{ range (.Site.RegularPages.GroupBy "Section") }}
-    {{ with $.Site.GetPage "section" .Key }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  {{ end }}  
-</ul>  

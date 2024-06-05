@@ -1,3 +1,0 @@
-{{ $js := resources.Get "js/script.js" }}
-{{ $javascript := $js  | resources.Fingerprint "sha256" }}
-<script defer language="javascript" type="text/javascript"  src="{{ $javascript.RelPermalink | urlize | relURL }}"></script>

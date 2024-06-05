@@ -67,6 +67,9 @@ Vyberte lokaci pro uložení ISO souboru a jeho jméno.
 ![full](14.png)
 
 ### B) Načtení instalace z vytvořené flash
+```
+Aktualizace 06/2024 - Odpojte počítač od internetu, v nové verzi nejde obejít **online účet** s připojeným internetem.
+```
 Flash vytvořena pomocí bodu 6. Flash vytvořena pomocí zápisu z ISO souboru z bodu 7. A to pomocí programů jako Rufus, Balena Etcher, [Ventoy](../ventoy-zavadeni-obrazu-medii/) apod.
 Flash zavedeme pomocí funkce boot menu nebo úpravou pořadí zavedení disku tj. boot order v rámci BIOSu.
 
@@ -148,8 +151,7 @@ Pokud máme internet, tak přejdeme k bodu 15.
 ![full](30.png)
 
 ```
-Pokud nastane situace, že se nemůžete připojit k internetu.
-Otevřeme si příkazový řádek klávesovou zkratka SHIFT+F10. Napíšeme příkaz: "OOBE\BYPASSNRO".
+Otevřeme si příkazový řádek klávesovou zkratka SHIFT+F10. Napíšeme příkaz: **"OOBE\BYPASSNRO"**.
 ```
 
 ![full](31.png)
@@ -170,28 +172,9 @@ Klikneme na Pokračovat s omezenou instalací
 
 ![full](35.png)
 
-15. Přihlášení (vytvoření účtu)
-
-![full](36.png)
-
-Účet MS nechceme používat. Aktivujeme si tedy offline účet!
-
 ```
-Uživatelské jméno: admin
-Heslo: password
+Zvolíme si jméno uživatele. Např.: uzivatel
 ```
-
-![full](37.png)
-
-![full](38.png)
-
-následně nám to vyhodí chybu. Pokračujeme tlačítkem další
-
-![full](39.png)
-
-Zvolíme si jméno uživatele. 
-
-        Např.: uzivatel
 
 ![full](40.png)
 
@@ -201,7 +184,7 @@ Heslo necháme prázdné = Automatické přihlášení na plochu
 
 ![full](41.png)
 
-16. Povolení sběru dat pro MS
+15. Povolení sběru dat pro MS
 
 ![full](42.png)
 
@@ -215,7 +198,7 @@ Heslo necháme prázdné = Automatické přihlášení na plochu
 
 ![full](47.png)
 
-17. Poslední nastavení a hurá na plochu
+16. Poslední nastavení a hurá na plochu
 
 ![full](48.png)
 

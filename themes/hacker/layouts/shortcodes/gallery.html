@@ -1,0 +1,26 @@
+{{ $currentPage := . }}
+{{ $images := (.Page.Resources.ByType "image") }}
+{{ if .Get "match"}}
+	{{ $images = (.Page.Resources.Match (.Get "match")) }}
+{{ end }}
+
+<div id="gallery">
+	<ul class="album">
+	{{ range $original := sort $images "Name" "asc" }}
+		{{ with .Fit "150x150 q50" }}
+		<li>
+			<a 	class="thumbnail" 
+				href="#"
+				onclick="gallery('{{ $original.RelPermalink | absURL }}');"
+			>
+				<!--
+					<img src="{{ .RelPermalink | safeURL }}" width="{{ .Width }}" height="{{ .Height }}">
+				-->
+
+				<img src="{{ .RelPermalink | safeURL }}">
+			</a>
+		</li>
+		{{ end }}
+	{{ end}}
+	</ul>
+</div>

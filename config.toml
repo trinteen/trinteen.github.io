@@ -1,7 +1,7 @@
 baseURL = 'https://trinteen.github.io/'
 languageCode = "cz-cs"
 title = "MY LIFE IS ZEROS AND ONES"
-theme = "msdos"
+theme = "hacker"
 sectionPagesMenu = "main"
 pluralizelisttitles = "false"
 timeout = 180000
@@ -17,4 +17,9 @@ timeout = 180000
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
