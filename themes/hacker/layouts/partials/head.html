@@ -11,9 +11,11 @@
 <meta name="viewport" content="width=device-width">
 
 <meta name="og:title" property="og:title" content="trinteen.cz | {{ .Site.Title }} | {{ .Title }}">
-
-<meta name="twitter:card" content="summary">
-
+<meta name="og:description" property="og:description" content="{{ $description }}" />
+<meta name="og:title" property="og:title" content="The Rock" />
+<meta name="og:url" property="og:url" content="{{ .RelPermalink }}" />
+<meta name="og:image" property="og:image" content="{{ .Site.BaseURL }}/favicon-32x32.png" />
+<meta name="og:site_name" property="og:site_name" content="trinteen.cz" />
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
