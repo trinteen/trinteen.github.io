@@ -11,7 +11,6 @@
 <meta name="viewport" content="width=device-width">
 
 <meta name="og:title" property="og:title" content="trinteen.cz | {{ .Site.Title }} | {{ .Title }}">
-<meta name="og:description" property="og:description" content="{{ $description }}" />
 <meta name="og:title" property="og:title" content="The Rock" />
 <meta name="og:url" property="og:url" content="{{ .RelPermalink }}" />
 <meta name="og:image" property="og:image" content="{{ .Site.BaseURL }}/favicon-32x32.png" />
@@ -26,6 +25,7 @@
 
 {{- $description := partialCached "data/description" . .RelPermalink -}}
 <meta name='description' content='{{ $description }}'>
+<meta name="og:description" property="og:description" content="{{ $description }}" />
 {{ with .Params.Keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 
 <link rel='canonical' href='{{ .Permalink }}'>
