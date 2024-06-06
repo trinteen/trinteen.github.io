@@ -219,7 +219,8 @@ body {
 #content .page article a,
 #content .page article a:active {
   color: var(--white);
-  display: block;
+  padding: 5px;
+  border-bottom: 1px solid var(--menu-grp);
 }
 
 #content .page article ol,
