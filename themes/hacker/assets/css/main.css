@@ -396,6 +396,11 @@ body {
   padding-bottom: 0 !important;
 }
 
+#content .page article a.thumbnail {
+  padding: 0;
+  border-bottom: 0;
+}
+
 
 
 /*
