@@ -10,8 +10,8 @@
 
 <meta name="viewport" content="width=device-width">
 
-<meta property="og:site_name" content="trinteen.cz | {{ .Site.Title }} | {{ .Title }}" />
-<meta property="og:title" content="trinteen.cz | {{ .Site.Title }} | {{ .Title }}">
+<meta property="og:site_name" content="trinteen.cz" />
+<meta property="og:title" content="{{ .Title }} | trinteen.cz">
 <meta property="og:type" content="object">
 <meta property="og:url" content="{{ .RelPermalink }}">
 <meta property="og:image" content="https://trinteen.cz/android-chrome-256x256.png">
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image:src" content="https://trinteen.cz/android-chrome-256x256.png">
 
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title "trinteen.cz" }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 
 {{ $js := resources.Get "js/main.js" }}
