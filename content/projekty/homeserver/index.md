@@ -20,5 +20,5 @@ Jde o konfiguraci se 4 jádrovým procesorem **AMD GX-415GA** s taktem **1,5GHz*
 ![full](3.jpg)
 
 ### Operační system a další software
-Jako operační systém jsem pro účely hostování domácího MC serveru, přesněji: [Majnr Plus](https://www.curseforge.com/minecraft/modpacks/majnr-plus) zvolil [Ubuntu Server](https://ubuntu.com/download/server). Pro hraní po internetu využívám služeb [PLAYIT.GG](https://playit.gg/), který poskytne rychlé a snadné propojení dalších hráčů odkudkoliv z internetu, bez nutnosti mít veřejnou IP adresu. [TeamSpeak Server](https://teamspeak.com/) pro komunikaci během hraní. Počet připojených klientů **1-3**.
+Jako operační systém jsem pro účely hostování domácího MC serveru, přesněji: [Majnr Plus](https://www.curseforge.com/minecraft/modpacks/majnr-plus) zvolil [Arch Linux](https://archlinux.org/). Pro hraní po internetu využívám služeb [PLAYIT.GG](https://playit.gg/), který poskytne rychlé a snadné propojení dalších hráčů odkudkoliv z internetu, bez nutnosti mít veřejnou IP adresu. [TeamSpeak Server](https://teamspeak.com/) pro komunikaci během hraní. Počet připojených klientů **1-3**.
 ![full](specs.jpg)
